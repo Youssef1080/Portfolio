@@ -13,7 +13,7 @@ const BackTopBtn = () => {
     });
   });
   const scrollToTop = () => {
-    window.scrollTo(600);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   {
     return (
@@ -22,7 +22,7 @@ const BackTopBtn = () => {
           onClick={() => scrollToTop()}
           className="bg-accent hover:bg-accent-hover text-white w-12 h-12 rounded-full fixed right-24 bottom-24 cursor-pointer flex justify-center items-center transition-all"
         >
-          {/* <ChevronUpIcon className="w-6 h-6" /> */}ds
+          {/* <ChevronUpIcon className="w-6 h-6" /> */}&uarr;
         </button>
       )
     );

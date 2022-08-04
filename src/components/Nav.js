@@ -4,7 +4,7 @@ import React from "react";
 import { navigation } from "../data";
 
 // import Link
-// import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
@@ -16,17 +16,17 @@ const Nav = () => {
               className="text-white hover:text-accent cursor-pointer"
               key={idx}
             >
-              {/* <Link
+              <Link
                 to={item.href}
-                activeClass='active'
+                activeClass="active"
                 spy={true}
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className='transition-all duration-300'
+                className="transition-all duration-300"
               >
                 {item.name}
-              </Link> */}
+              </Link>
             </li>
           );
         })}

@@ -3,6 +3,8 @@ import React, { useState } from "react";
 // import icons
 // import { XIcon } from "@heroicons/react/outline";
 // import { MenuAlt3Icon } from "@heroicons/react/outline";
+import { BiMenuAltRight } from "react-icons/bi";
+import { GrFormClose } from "react-icons/gr";
 
 // import navigation data
 import { navigation } from "../data";
@@ -11,10 +13,10 @@ import { navigation } from "../data";
 import Socials from "./Socials";
 
 // import framer
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 // import Link
-// import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,48 +51,48 @@ const NavMobile = () => {
         onClick={() => setIsOpen(true)}
         className="cursor-pointer text-white"
       >
-        {/* <MenuAlt3Icon className="w-8 h-8" /> */}
+        <BiMenuAltRight className="w-8 h-8" />
       </div>
 
       {/* circle */}
-      {/* <motion.div
+      <motion.div
         variants={circleVariants}
         initial="hidden"
         animate={isOpen ? "visible" : "hidden"}
         className="w-4 h-4 rounded-full bg-accent fixed top-0 right-0"
-      ></motion.div> */}
+      ></motion.div>
 
-      {/* <motion.ul
+      <motion.ul
         variants={ulVariants}
         initial="hidden"
         animate={isOpen ? "visible" : ""}
         className={`${
           isOpen ? "right-0" : "-right-full"
         } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
-      > */}
-      <div
-        onClick={() => setIsOpen(false)}
-        className="cursor-pointer absolute top-8 right-8"
       >
-        {/* <XIcon className="w-8 h-8" /> */}
-      </div>
-      {navigation.map((item, idx) => {
-        return (
-          <li key={idx} className="mb-8">
-            {/* <Link
+        <div
+          onClick={() => setIsOpen(false)}
+          className="cursor-pointer absolute top-8 right-8"
+        >
+          <GrFormClose className="w-8 h-8" />
+        </div>
+        {navigation.map((item, idx) => {
+          return (
+            <li key={idx} className="mb-8">
+              <Link
                 to={item.href}
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className='text-xl cursor-pointer capitalize'
+                className="text-xl cursor-pointer capitalize"
               >
                 {item.name}
-              </Link> */}
-          </li>
-        );
-      })}
-      <Socials />
-      {/* </motion.ul> */}
+              </Link>
+            </li>
+          );
+        })}
+        <Socials />
+      </motion.ul>
     </nav>
   );
 };

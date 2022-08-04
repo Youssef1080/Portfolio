@@ -1,16 +1,16 @@
 //  icons
-// import {
-//   FiYoutube,
-//   FiInstagram,
-//   FiGithub,
-//   FiDribbble,
-//   FiLayout,
-//   FiSettings,
-//   FiPenTool,
-//   FiTag,
-//   FiMail,
-//   FiMapPin,
-// } from 'react-icons/fi';
+import {
+  FiYoutube,
+  FiInstagram,
+  FiGithub,
+  FiDribbble,
+  FiLayout,
+  FiSettings,
+  FiPenTool,
+  FiTag,
+  FiMail,
+  FiMapPin
+} from "react-icons/fi";
 
 // companies icons
 import FreelancerBrandIcon from "./assets/img/brands/freelancer.png";
@@ -73,19 +73,19 @@ export const navigation = [
 // social
 export const social = [
   {
-    // icon: <FiYoutube />,
+    icon: <FiYoutube />,
     href: ""
   },
   {
-    // icon: <FiInstagram />,
+    icon: <FiInstagram />,
     href: ""
   },
   {
-    // icon: <FiGithub />,
+    icon: <FiGithub />,
     href: ""
   },
   {
-    // icon: <FiDribbble />,
+    icon: <FiDribbble />,
     href: ""
   }
 ];
@@ -184,42 +184,42 @@ export const skills = [
   {
     image: SkillImg4
   },
-  {
-    image: SkillImg5
-  },
-  {
-    image: SkillImg6
-  },
+  // {
+  //   image: SkillImg5
+  // },
+  // {
+  //   image: SkillImg6
+  // },
   {
     image: SkillImg7
-  },
-  {
-    image: SkillImg8
   }
+  // {
+  //   image: SkillImg8
+  // }
 ];
 
 // services
 export const services = [
   {
-    // icon: <FiLayout />,
+    icon: <FiLayout />,
     name: "Web Design",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore."
   },
   {
-    // icon: <FiSettings />,
+    icon: <FiSettings />,
     name: "Web Development",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore."
   },
   {
-    // icon: <FiPenTool />,
+    icon: <FiPenTool />,
     name: "Branding",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore."
   },
   {
-    // icon: <FiTag />,
+    icon: <FiTag />,
     name: "SEO",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore."
@@ -254,13 +254,13 @@ export const testimonials = [
 // contact
 export const contact = [
   {
-    // icon: <FiMail />,
+    icon: <FiMail />,
     title: "Have a question?",
     subtitle: "I am here to help you.",
     description: "Email me at hello@youremail.com"
   },
   {
-    // icon: <FiMapPin />,
+    icon: <FiMapPin />,
     title: "Current Location",
     subtitle: "Bucharest, Romania",
     description: "Serving clients worldwide"
