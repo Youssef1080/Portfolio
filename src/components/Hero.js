@@ -80,7 +80,7 @@ const Hero = () => {
             {" "}
             <AnimatedLetters
               strArray={jobArr}
-              idx={28}
+              idx={29}
               letterClass={letterClass}
             />
           </h1>

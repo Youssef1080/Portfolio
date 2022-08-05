@@ -38,9 +38,9 @@ import SkillImg7 from "./assets/img/skills/git.png";
 import SkillImg8 from "./assets/img/skills/figma.png";
 
 // testimonial images
-import TestiImage1 from "./assets/img/testimonials/testimonial-1.webp";
-import TestiImage2 from "./assets/img/testimonials/testimonial-2.webp";
-import TestiImage3 from "./assets/img/testimonials/testimonial-3.webp";
+import TestiImage1 from "./assets/img/testimonials/avatar3.png";
+import TestiImage2 from "./assets/img/testimonials/avatar.jpg";
+import TestiImage3 from "./assets/img/testimonials/avatar4.jpg";
 
 // navigation
 export const navigation = [
@@ -119,39 +119,39 @@ export const projectsData = [
   {
     id: "1",
     image: Project1,
-    name: "project name 1",
+    name: "Quiz App",
     category: "UI/UX design"
   },
   {
     id: "2",
     image: Project2,
-    name: "project name 2",
+    name: "Todo List",
     category: "web development"
   },
   {
     id: "3",
     image: Project3,
-    name: "project name 3",
+    name: "Crypto Currency",
     category: "UI/UX design"
   },
   {
     id: "4",
     image: Project4,
-    name: "project name 4",
+    name: "Dashboard",
     category: "branding"
   },
   {
     id: "5",
     image: Project5,
-    name: "project name 5",
-    category: "web development"
-  },
-  {
-    id: "6",
-    image: Project6,
-    name: "project name 6",
+    name: "Guess Game",
     category: "web development"
   }
+  // {
+  //   id: "6",
+  //   image: Project6,
+  //   name: "project name 6",
+  //   category: "web development"
+  // }
 ];
 
 // projects
@@ -232,21 +232,21 @@ export const testimonials = [
     authorImg: TestiImage1,
     authorText:
       "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
-    authorName: "Olivia Doe",
+    authorName: "Jack",
     authorPosition: "Head of Design, Google"
   },
   {
     authorImg: TestiImage2,
     authorText:
       "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
-    authorName: "Olivia Doe",
+    authorName: "Joun",
     authorPosition: "Head of Design, Google"
   },
   {
     authorImg: TestiImage3,
     authorText:
       "Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.",
-    authorName: "Olivia Doe",
+    authorName: "Adel",
     authorPosition: "Head of Design, Google"
   }
 ];

@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 // import data
-import { projectsData } from '../data';
-import { projectsNav } from '../data';
+import { projectsData } from "../data";
+import { projectsNav } from "../data";
 
 // import components
-import Project from './Project';
+import Project from "./Project";
 
 const Projects = () => {
-  const [item, setItem] = useState({ name: 'all' });
+  const [item, setItem] = useState({ name: "all" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
     // get projects based on item
-    if (item.name === 'all') {
+    if (item.name === "all") {
       setProjects(projectsData);
     } else {
       const newProjects = projectsData.filter((project) => {
@@ -32,8 +32,8 @@ const Projects = () => {
   return (
     <div>
       {/* projects nav */}
-      <nav className='mb-12 max-w-xl mx-auto'>
-        <ul className='flex flex-col md:flex-row justify-evenly items-center text-white'>
+      {/* <nav className="mb-12 max-w-xl mx-auto">
+        <ul className="flex flex-col md:flex-row justify-evenly items-center text-white">
           {projectsNav.map((item, index) => {
             return (
               <li
@@ -41,7 +41,7 @@ const Projects = () => {
                   handleClick(e, index);
                 }}
                 className={`${
-                  active === index ? 'active' : ''
+                  active === index ? "active" : ""
                 } cursor-pointer capitalize m-4`}
                 key={index}
               >
@@ -50,9 +50,9 @@ const Projects = () => {
             );
           })}
         </ul>
-      </nav>
+      </nav> */}
       {/* projects */}
-      <section className='grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8'>
+      <section className="grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8">
         {projects.map((item) => {
           return <Project item={item} key={item.id} />;
         })}
